@@ -78,11 +78,11 @@ export default function HomePage() {
       <section className="py-28 bg-[#050508]">
         <div className="max-w-[1100px] mx-auto px-6">
           <ScrollReveal>
-            <div className="mb-11">
-              <p className="text-[18px] text-white/60 font-normal tracking-tight text-center mb-4">
+            <div className="flex flex-col gap-4 mb-11">
+              <p className="text-[18px] text-white font-normal tracking-tight leading-[1.08]">
                 Selected Works
               </p>
-              <h2 className="text-[39px] md:text-[52px] font-normal text-white tracking-tight leading-[1.08]">
+              <h2 className="text-[39px] font-normal text-white tracking-tight leading-[1.08]">
                 近期项目
               </h2>
             </div>
@@ -134,9 +134,14 @@ export default function HomePage() {
       <section className="py-28 bg-[#050508]">
         <div className="max-w-[1100px] mx-auto px-6">
           <ScrollReveal className="mb-11">
-            <h2 className="text-[39px] md:text-[52px] font-normal text-white tracking-tight leading-[1.08]">
-              我能为你做什么
-            </h2>
+            <div className="flex flex-col gap-4">
+              <p className="text-[18px] text-white font-normal tracking-tight leading-[1.08]">
+                Selected Works
+              </p>
+              <h2 className="text-[39px] font-normal text-white tracking-tight leading-[1.08]">
+                我能为你做什么
+              </h2>
+            </div>
           </ScrollReveal>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -167,7 +172,7 @@ export default function HomePage() {
                       {s.icon}
                     </div>
                     <div className="flex flex-col gap-4">
-                      <h3 className="text-[24px] font-medium text-white tracking-tight">
+                      <h3 className="text-[25px] font-medium text-white tracking-tight">
                         {s.title}
                       </h3>
                       <p className="text-[15px] text-white/80 leading-relaxed">
